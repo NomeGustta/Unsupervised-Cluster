@@ -77,6 +77,15 @@ print(f"Índice de Silhueta: {silhouette_avg:.2f}")
 - O índice de silhueta é calculado para avaliar a qualidade da clusterização.
 - O resultado é impresso para análise.
 
+
+## 📈 Visualização dos Clusters
+
+Abaixo, uma visualização 2D dos clusters identificados pelo K-Means após a redução de dimensionalidade com PCA:
+
+![Captura de tela 2024-12-05 114748](https://github.com/user-attachments/assets/9e3694c2-3bd9-4793-a1bb-47bda005c514)
+
+Esta imagem mostra a distribuição dos dados em dois componentes principais, com cores diferentes representando cada cluster identificado.
+
 ### 5. Visualização com PCA
 
 ```python
@@ -132,3 +141,4 @@ print(comparison)
 ---
 
 Espero que este README tenha tornado o código mais compreensível e útil! 😊
+
