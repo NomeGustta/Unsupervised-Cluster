@@ -1,4 +1,4 @@
-# 📚 README - Análise de Clustering com K-Means e PCA no Conjunto de Dados Iris
+# 📚 Análise de Clustering com K-Means e PCA no Conjunto de Dados Iris
 
 ## 🔧 Dependências
 
