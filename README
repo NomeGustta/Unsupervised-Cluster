@@ -1,0 +1,90 @@
+# Guia de Configuração do Ambiente Python
+
+## Passo 1: Verificar se o Python e o pip estão instalados
+1. Abra o terminal ou prompt de comando.
+2. Digite os seguintes comandos para verificar as versões instaladas:
+   ```bash
+   python --version
+   pip --version
+   ```
+3. Se o Python ou o pip não estiverem instalados, você pode baixá-los [aqui](https://www.python.org/downloads/).
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Passo 2: Criar um ambiente virtual (recomendado)
+Criar um ambiente virtual evita conflitos entre dependências de diferentes projetos.
+
+1. No terminal, navegue até a pasta do projeto:
+   ```bash
+   cd caminho/para/sua/pasta
+   ```
+2. Crie o ambiente virtual:
+   ```bash
+   python -m venv venv
+   ```
+3. Ative o ambiente virtual:
+   - **Windows:**
+     ```bash
+     venv\Scripts\activate
+     ```
+   - **Linux/Mac:**
+     ```bash
+     source venv/bin/activate
+     ```
+
+   Quando o ambiente virtual estiver ativo, você verá algo como `(venv)` antes do prompt no terminal.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Passo 3: Instalar as bibliotecas necessárias
+Agora, você pode instalar cada biblioteca usando o comando `pip install`.
+
+### 1. Instalar a biblioteca `pandas`
+O `pandas` é usado para manipulação de dados. Instale com:
+   ```bash
+   pip install pandas
+   ```
+   Verifique a instalação:
+   ```bash
+   python -c "import pandas; print(pandas.__version__)"
+   ```
+
+### 2. Instalar a biblioteca `matplotlib`
+O `matplotlib` é usado para criar gráficos e visualizações. Instale com:
+   ```bash
+   pip install matplotlib
+   ```
+   Verifique a instalação:
+   ```bash
+   python -c "import matplotlib; print(matplotlib.__version__)"
+   ```
+
+### 3. Instalar a biblioteca `scikit-learn`
+O `scikit-learn` é usado para implementar modelos de aprendizado de máquina. Instale com:
+   ```bash
+   pip install scikit-learn
+   ```
+   Verifique a instalação:
+   ```bash
+   python -c "import sklearn; print(sklearn.__version__)"
+   ```
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+## Passo 4: Criar um arquivo de dependências (opcional, mas útil)
+Depois de instalar as bibliotecas, você pode salvar todas as dependências em um arquivo `requirements.txt`:
+   ```bash
+   pip freeze > requirements.txt
+   ```
+   O arquivo `requirements.txt` conterá uma lista de todas as bibliotecas instaladas e suas versões, por exemplo:
+   ```text
+   matplotlib==3.8.0
+   pandas==2.1.1
+   scikit-learn==1.4.2
+   ```
+
+Para instalar as dependências em outro ambiente, use:
+   ```bash
+   pip install -r requirements.txt
+   ```
+------------------------------------------------------------------------------------------------------------------------------------
